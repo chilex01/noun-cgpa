@@ -1,0 +1,15 @@
+{
+  "short_name": "NOUN CGPA",
+  "name": "NOUN Computer Science CGPA Calculator",
+  "icons": [
+    {
+      "src": "https://nou.edu.ng",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#003366",
+  "background_color": "#ffffff"
+}

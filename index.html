@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOUN CGPA Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <img src="https://nou.edu.ng" alt="NOUN Logo" class="logo">
+            <h1>CS CGPA Calculator</h1>
+        </header>
+
+        <div id="course-list">
+            <!-- Starting with 4 course rows -->
+            <div class="course-row">
+                <input type="text" placeholder="Code" class="course-code">
+                <input type="number" placeholder="Units" class="course-units">
+                <select class="course-grade">
+                    <option value="5">A</option><option value="4">B</option>
+                    <option value="3">C</option><option value="2">D</option>
+                    <option value="1">E</option><option value="0">F</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button onclick="addRow()" class="btn-secondary">+ Add Course</button>
+            <button onclick="calculate()" class="btn-primary">Calculate</button>
+            <button onclick="saveData()" class="btn-save">Save Progress</button>
+        </div>
+
+        <div class="results">
+            <h2 id="gpa-out">CGPA: 0.00</h2>
+            <p id="class-out">Class: ---</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
